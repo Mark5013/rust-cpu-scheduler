@@ -1,5 +1,3 @@
-# rust-cpu-scheduler
-
 # Description and How To Use
 This is a program that immitates how a CPU could schedule processes. It has the ability to replicate FIFO, RR, STCF, and SJF. 
 It will also display the average response time and average turnaround time after simulating the algorithm. To use it, you can 
