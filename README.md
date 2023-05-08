@@ -35,13 +35,13 @@ as <arrival time> <duration> on each line.
 - fn read_lines
   - Takes in a path to a file, opens the file, and returns an iterator that iterates over the lines of the file
   - Input
-    - filename: &String
+    - &String
   - Ouput
     - io::Lines<BufReader<File>>
 - fn read_workload
   - Takes in a path to a file and returns a PQueueArrival based on the workload file
   - Input
-    - filename: &String
+    - &String
   - Output
     - PQueueArrival
 - fn show_workload
@@ -74,6 +74,39 @@ as <arrival time> <duration> on each line.
     - &Vec<T>
   - Output
     - void
+## Algorithms Module
+-  fn fifo
+  - Takes in a PQueueArrival, performs fifo on the workload, and returns a vector of completed ArrivalProcess. Also displays the algorithms average response and turnaround times
+  - Input
+    - PQueueArrival
+  - Output
+    - Vec<ArrivalProcess>
+- fn rr
+  - Takes in a PQueueArrival, performs rr on the workload, and returns a vector of completed ArrivalProcess. Also displays the algorithms average response and turnaround times
+  - Input
+    - PQueueArrival
+  - Output
+    - Vec<ArrivalProcess>
+- fn sjf
+  - Takes in a PQueueArrival, performs sjf on the workload, and returns a vector of completed DurationProcess. Also displays the algorithms average response and turnaround times
+  - Input
+    - PQueueArrival
+  - Output
+    - Vec<DurationProcess>
+- fn stcf
+  - Takes in a PQueueArrival, performs stcf on the workload, and returns a vector of completed DurationProcess. Also displays the algorithms average response and turnaround times
+  - Input
+    - PQueueArrival
+  - Output
+    - Vec<DurationProcess>
+ ## Main function
+ - Reads in the algorithm type and workload file path from the command line
+   - If more than 2 arguments are provided, program will output the correct format and then exit
+ - Attempts to create a PQueueArrival based on the filepath
+   - If file path is invalid, program will notify user and exit
+ - Displays the PQueueArrival workload that was created
+ - Runs a scheduling algorithm based off the input provided by the user
+   - If algorithm is invalid, program will notify user, output the correct format, and then exit
 
 
     
