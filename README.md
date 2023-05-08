@@ -3,7 +3,7 @@
 # Description and How To Use
 This is a program that immitates how a CPU could schedule processes. It has the ability to replicate FIFO, RR, STCF, and SJF. 
 It will also display the average response time and average turnaround time after simulating the algorithm. To use it, you can 
-download this repo and type "cargo run [algorithm name] [path to workload file] where the workload file is txt file formatted 
+download this repo and type "cargo run [algorithm name] [path to workload file]" where the workload file is a txt file formatted 
 as [arrival time] [duration] on each line.
 
 # Documentation
