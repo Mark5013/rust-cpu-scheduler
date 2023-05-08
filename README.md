@@ -76,11 +76,11 @@ as [arrival time] [duration] on each line.
     - void
 ## Algorithms Module
 -  fn fifo
-  - Takes in a PQueueArrival, performs fifo on the workload, and returns a vector of completed ArrivalProcess. Also displays the algorithms average response and turnaround times
-  - Input
-    - PQueueArrival
-  - Output
-    - Vec<ArrivalProcess>
+    - Takes in a PQueueArrival, performs fifo on the workload, and returns a vector of completed ArrivalProcess. Also displays the algorithms average response and turnaround times
+    - Input
+      - PQueueArrival
+    - Output
+      - Vec<ArrivalProcess>
 - fn rr
   - Takes in a PQueueArrival, performs rr on the workload, and returns a vector of completed ArrivalProcess. Also displays the algorithms average response and turnaround times
   - Input
