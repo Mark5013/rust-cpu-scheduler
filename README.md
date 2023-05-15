@@ -3,6 +3,7 @@ This is a program that immitates how a CPU could schedule processes. It has the 
 It will also display the average response time and average turnaround time after simulating the algorithm. To use it, you can 
 download this repo and type "cargo run [algorithm name] [path to workload file]" where the workload file is a txt file formatted 
 as [arrival time] [duration] on each line.
+Link to video: https://www.youtube.com/watch?v=y-n0Np-WPDw
 
 # Documentation
 ## Processes Module
